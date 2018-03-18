@@ -12,25 +12,55 @@
     <div class="navbar-end">
       <div class="navbar-item" id="user-panel">User</div>
     </div>
-      Add topic: <input type="text" name="topicName" class="JS-topicName">
-      <input type="submit" value="Add" class="JS-addTopic">
+      <!-- Add topic: <input type="text" name="topicName" class="JS-topicName">
+      <input type="submit" value="Add" class="JS-addTopic"> -->
+
+      <section class="section">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <article class="message">
+                    <div class="message-header">
+                        <p>Zgłoś propozycję warsztatów</p>
+                    </div>
+                    <div class="message-body">
+                        <form action="" class="js-form-add-topic">
+                            <div class="field">
+                                <label class="label">
+                                    <sup class="has-text-danger">*</sup> Temat
+                                </label>
+                                <div class="control">
+                                    <input class="input JS-topicName" type="text" name="topic" required/>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">
+                                    <sup class="has-text-danger">*</sup> Opis
+                                </label>
+                                <div class="control">
+                                    <textarea class="textarea JS-topicDescription" name="description" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button is-link JS-addTopic">Prześlij</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-text" type="reset">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
   </nav>
   <section class="section">
     <h1 class="title">Topics Mangager</h1>
-    <ul class="columns JS-topics">
-      <li class="column">
-        Hello
-      </li>
-      <li class="column">
-        Hello2
-      </li>
-      <li class="column">
-        Hello3
-      </li>
-      <li class="column">
-        Hello4
-      </li>
-    </ul>
+      <div class="columns is-multiline JS-topics"></div>
+
   </section>
   <script src="./index.js"></script>
 </body>
