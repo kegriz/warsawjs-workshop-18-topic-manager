@@ -1,0 +1,8 @@
+{
+  "name": "warsawjs-workshop-18-topic-manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kegriz/warsawjs-workshop-18-topic-manager.git",
+  "author": "kegriz <rafalrudko.cmzzs@gmail.com>",
+  "license": "MIT"
+}
