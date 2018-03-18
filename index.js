@@ -1,6 +1,8 @@
 import Helpers from './helpers.js'
 import hello from 'hellojs'
+
 require('bulma')
+require('./addTopic.js')
 import config from './config.js'
 
 const helpers = new Helpers()
