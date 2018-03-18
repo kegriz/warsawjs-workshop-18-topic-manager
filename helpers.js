@@ -1,20 +1,19 @@
 export default class Helpers {
-
-  constructor(args) {
-    // code
-  }
+  // constructor (args) {
+  //   // code
+  // }
 
   // static sprawia ze w index.js nie trzeba tworzyc instancji tej klasy
   // działa od razu Helpers.test()
-  static test() {
+  static test () {
     return 'Meow'
   }
 
-  static hello() {
+  static hello () {
     return 'hello Meow'
   }
 
-  goodbye() {
+  goodbye () {
     return 'bye'
   }
 }

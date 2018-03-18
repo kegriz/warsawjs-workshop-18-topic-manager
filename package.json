@@ -5,7 +5,21 @@
   "repository": "https://github.com/kegriz/warsawjs-workshop-18-topic-manager.git",
   "author": "kegriz <rafalrudko.cmzzs@gmail.com>",
   "license": "MIT",
+  "standard": {
+    "ignore": [
+      "dist/"
+    ]
+  },
+  "scripts": {
+    "lint": "yarn standard --fix",
+    "dev": "parcel index.html"
+  },
   "dependencies": {
-    "parcel-bundler": "^1.6.2"
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "bulma": "^0.6.2",
+    "hellojs": "^2.0.0-4",
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.6.2",
+    "standard": "^11.0.1"
   }
 }
