@@ -1,0 +1,12 @@
+.newTopicModal {
+  display: none;
+  z-index: 100;
+  width: 400px;
+  position: fixed;
+  top: 100px;
+  left: 50%-400px;
+
+}
+.newTopicModal--active {
+  display: block;
+}

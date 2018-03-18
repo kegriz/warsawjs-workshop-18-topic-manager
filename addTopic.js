@@ -4,6 +4,11 @@ const qsa = (elements) => document.querySelectorAll(elements);
 const addButton = qs(".JS-addTopic")
 const element = qs(".JS-topics")
 
+const showModalButton = qs('.JS-addTopicButton')
+showModalButton.addEventListener("click", function() {
+  qs('.newTopicModal').classList.add("newTopicModal--active")
+})
+
 let data = [];
 let topicId = 0;
 let content = "";
@@ -14,6 +19,7 @@ addButton.addEventListener("click", function() {
       topicId ++;
       content = "";
       qs(".JS-topicName").value = "";
+      qs('.newTopicModal').classList.remove("newTopicModal--active")
       printColumns()
     }
   }, false);
